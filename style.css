@@ -83,6 +83,15 @@ li:hover {
     top: 180px;
 }
 
+.quickNav__switcher {
+    position: fixed;
+    top: 175px;
+}
+
+.click__header--red {
+    color: darkred;
+}
+
 .article__secondary--heder-bacground {
     position: sticky;
     position: -webkit-sticky;
@@ -97,13 +106,36 @@ li:hover {
     background: #07BEB8cf;
 }
 
+.quickNav__list--visible {
+    position: fixed;
+    background: red;
+    display: block;
+}
 @media screen and (max-width: 800px) {
+    .quickNav__list {
+        position: fixed;
+    }
+    
     .quickNav {
         display: none;
     }
+    
+
+    .quickNav__switcher {
+        border: none;
+        background: none;
+    }
+    
     .article {
         margin: 0;
+        margin-left: 27px;
         max-width: 900px;
+    }
+}
+
+@media screen and (min-width: 801px) {
+    .quickNav__switcher {
+        display: none;
     }
 }
 

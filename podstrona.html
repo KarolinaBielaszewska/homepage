@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
-</head>
-
-<body>
-    <nav class="quickNav">
-        <ul>
-            <li><a href=#week1> Pierwszy tydzień </a></li>
-            <li><a href=#week2> Drugi tydzień </a></li>
-            <li><a href=#week3> Trzeci tydzień </a></li>
-        </ul>
-    </nav>
-    <header class="menu">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+    
+    <body>
+        <button class="quickNav__switcher quickNav__switcher--js">☰</button>
+        <nav class="quickNav">
+            <ul class="quickNav__list quickNav__list--js">
+                <li><a href=#week1> Pierwszy tydzień </a></li>
+                <li><a href=#week2> Drugi tydzień </a></li>
+                <li><a href=#week3> Trzeci tydzień </a></li>
+            </ul>
+        </nav>
+        <header class="menu">
         <a href="index.html">Strona główna</a>
         <a href="podstrona.html">Pamiętniczek szczegółowy</a>
     </header>
@@ -80,7 +81,10 @@
             Strona domowa Karoliny Bielaszewskiej, wszystkie treści powstały podczas szkolenia WTF: Co ten fronted.
         </p>
     </footer>
+            <div class="click">
+                <h3 class="click__header click__header--js"> Jak klikniesz to się zmienię</h3>
+                <button class="click__button click__button--js"> Klik </button>
+            </div>
     <script src="main.js"></script>
 </body>
-
 </html>
