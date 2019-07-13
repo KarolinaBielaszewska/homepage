@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="pl">
-    
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Document</title>
-        <link href="style.css" rel="stylesheet" type="text/css">
-    </head>
-    
-    <body>
-        <button class="quickNav__switcher quickNav__switcher--js">☰</button>
-        <nav class="quickNav">
-            <ul class="quickNav__list quickNav__list--js">
-                <li><a href=#week1> Pierwszy tydzień </a></li>
-                <li><a href=#week2> Drugi tydzień </a></li>
-                <li><a href=#week3> Trzeci tydzień </a></li>
-            </ul>
-        </nav>
-        <header class="menu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <button class="quickNav__switcher quickNav__switcher--js">☰</button>
+    <nav class="quickNav">
+        <ul class="quickNav__list quickNav__list--js">
+            <li><a href=#week1> Pierwszy tydzień </a></li>
+            <li><a href=#week2> Drugi tydzień </a></li>
+            <li><a href=#week3> Trzeci tydzień </a></li>
+        </ul>
+    </nav>
+    <header class="menu">
         <a href="index.html">Strona główna</a>
         <a href="podstrona.html">Pamiętniczek szczegółowy</a>
     </header>
     <main>
         <h1>Pamiętniczek szczegółowy</h1>
         <article id="week1" class="article article__primary">
-            <h2 class="article__primary--heder-bacground">Co się działo w pierwszym tygodniu</h2>
-            <p>
+            <h2 class="article__primary--header-bacground">Co się działo w pierwszym tygodniu</h2>
+            <p class="paragraph">
                 Pierwszy tydzień był rozruchowy. Trwała jeszcze sprzedaż, ciągle nas przybywało na Slacku :P<br>
                 Poznaliśmy takie programy jak:<br>Visual Studio Code<br>Slack
                 <br> Naszym zadaniem było zainstalowanie programu VSC oraz komunikatora Slack.<br>Dołączyłam też do
@@ -39,8 +39,8 @@
         </article>
         <div class="article__secondary--background">
             <article id="week2" class="article article__secondary">
-                <h2 class="article__secondary--heder-bacground">Co się działo w drugim tygodniu</h2>
-                <p>
+                <h2 class="article__secondary--header-bacground">Co się działo w drugim tygodniu</h2>
+                <p class="paragraph">
                     W drugim tygodniu Maciek przedstawił nam warstwy strony – w tak zabawy sposób, że ciężko tego nie
                     zapamiętać :D Zalewający sąsiad innych sąsiadów.<br>Dowiedziałam się (w końcu) co to jest
                     semantyczny
@@ -57,8 +57,8 @@
             </article>
         </div>
         <article id="week3" class="article article__primary">
-            <h2 class="article__primary--heder-bacground">Co się działo w trzecim tygodniu</h2>
-            <p>
+            <h2 class="article__primary--header-bacground">Co się działo w trzecim tygodniu</h2>
+            <p class="paragraph">
                 Na samym początku trzeciego tygodnia poznaliśmy Kanban - spis widoczny.<br>Fajnym narzędziem do jego
                 zastosowania jest Trello (link).<br>W html zastosowaliśmy nowe znaczniki takie jak: article, class, id,
                 href i src.<br>W css poznaliśmy selektor klasy - czyli kropkę oraz selektor id - czyli
@@ -77,14 +77,15 @@
         </article>
     </main>
     <footer>
-        <p>
+        <p class="paragraph">
             Strona domowa Karoliny Bielaszewskiej, wszystkie treści powstały podczas szkolenia WTF: Co ten fronted.
         </p>
     </footer>
-            <div class="click">
-                <h3 class="click__header click__header--js"> Jak klikniesz to się zmienię</h3>
-                <button class="click__button click__button--js"> Klik </button>
-            </div>
+    <div class="click">
+        <h3 class="click__header click__header--js"> Jak klikniesz to się zmienię</h3>
+        <button class="click__button click__button--js"> Klik </button>
+    </div>
     <script src="main.js"></script>
 </body>
+
 </html>
