@@ -1,4 +1,3 @@
-
 body {
     background: #07BEB8;
     color: #010F0E;
@@ -6,10 +5,9 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.paragraph {
-    margin: 0;
-    padding: 0 15px;
-    line-height: 1.8;
+a {
+    text-decoration-line: none;
+    color: #010F0E;
 }
 
 h1 {
@@ -31,11 +29,6 @@ h3 {
     padding: 15px 10px;
 }
 
-a {
-    text-decoration-line: none;
-    color: #010F0E;
-}
-
 footer {
     background: #010F0E;
     color: #E7E9E9;
@@ -43,9 +36,41 @@ footer {
     text-align: right;
 }
 
+li {
+    padding: 10px;
+    border-bottom: 2px solid white;
+}
+
+li:hover {
+    padding: 10px;
+    border-bottom: 2px solid black;
+}
+
 .article {
     margin: 0 auto 0 200px;
     max-width: 900px;
+}
+
+.article__primary--header-background {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 50px;
+    background: #07BEB8cf;
+}
+
+.article__secondary--background {
+    background: #98DFEA;
+}
+
+.article__secondary--header-background {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 50px;
+    background: #98DFEAcf;
+}
+
+.click__header--red {
+    color: darkred;
 }
 
 .menu {
@@ -60,28 +85,15 @@ footer {
     z-index: 1;
 }
 
-.picture {
-    margin: 32px;
-    border-radius: 20%;
-}
-
-.article__secondary--background {
-    background: #98DFEA;
-}
-
-li {
-    padding: 10px;
-    border-bottom: 2px solid white;
-}
-
-li:hover {
-    padding: 10px;
-    border-bottom: 2px solid black;
-}
-
 .quickNav {
     position: fixed;
     top: 180px;
+}
+
+.quickNav__list--visible {
+    position: fixed;
+    background: red;
+    display: block;
 }
 
 .quickNav__switcher {
@@ -89,28 +101,15 @@ li:hover {
     top: 175px;
 }
 
-.click__header--red {
-    color: darkred;
+.paragraph {
+    margin: 0;
+    padding: 0 15px;
+    line-height: 1.8;
 }
 
-.article__secondary--header-bacground {
-    position: sticky;
-    position: -webkit-sticky;
-    top: 50px;
-    background: #98DFEAcf;
-}
-
-.article__primary--header-bacground {
-    position: sticky;
-    position: -webkit-sticky;
-    top: 50px;
-    background: #07BEB8cf;
-}
-
-.quickNav__list--visible {
-    position: fixed;
-    background: red;
-    display: block;
+.picture {
+    margin: 32px;
+    border-radius: 20%;
 }
 
 @media screen and (max-width: 800px) {
